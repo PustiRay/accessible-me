@@ -1,13 +1,15 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: #f0f0f0; /* Changed to a lighter grey for better contrast */
-  color: #333; /* Improved text color contrast */
+  background-color: #ffffff; /* Changed to white for better overall contrast */
+  color: #333333; /* Darker text color for better readability */
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  color: #222222; /* Darker heading color for better contrast */
+
 }
 
 .container {
@@ -35,9 +37,14 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: #007BFF; /* Changed to a blue for better link visibility */
+  color: #0056b3; /* Darker blue for better link visibility */
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  color: #003580; /* Even darker blue for hover/focus state */
 }
 
 form input,
@@ -46,7 +53,14 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
-  border: 1px solid #ccc; /* Added border for better visibility */
+  border: 1px solid #cccccc; /* Light grey border for better visibility */
+  background-color: #ffffff; /* White background for form elements */
+  color: #333333; /* Dark text color for form inputs */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007BFF; /* Blue border on focus for better accessibility */
 }
 
 form textarea {
@@ -57,17 +71,25 @@ form textarea {
 }
 
 form button {
-  background: #007BFF; /* Added background color for better visibility */
-  color: #fff; /* White text for better contrast */
+  background: #007BFF; /* Blue background for better visibility */
+  color: #ffffff; /* White text for better contrast */
   border: 2px solid #007BFF;
   padding: 1rem;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #0056b3; /* Darker background on hover */
+form button:hover,
+form button:focus {
+  background: #0056b3; /* Darker background on hover/focus */
   border-color: #0056b3;
+}
+
+.site-footer {
+  background-color: #f1f1f1; /* Light grey background for footer */
+  color: #333333; /* Dark text color for better readability */
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .skip-link {
@@ -75,7 +97,7 @@ form button:hover {
   top: -40px;
   left: 0;
   background: #007BFF;
-  color: #fff;
+  color: #ffffff;
   padding: 8px;
   z-index: 100;
   transition: top 0.3s;
